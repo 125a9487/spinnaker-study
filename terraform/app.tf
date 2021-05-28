@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 variable "team-name" {
-  description = "team-name"
+  description = "team1"
   type        = string
   default     = "default-team-name"
 }
@@ -26,7 +26,7 @@ terraform {
    backend "s3" {
  # Replace this with your bucket name!
    bucket         = "ot-infra-state"
-   key            = "global/s3/terraform-test.tfstate"
+   key            = "global/s3/terraform-team1.tfstate"
    region         = "us-east-1"
    }
 }
